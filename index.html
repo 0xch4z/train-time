@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Train Time</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css">  
+</head>
+<body>
+  <div id="wrapper">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Train Time</a>
+      </div>
+    </nav>
+    <br>    
+    <main class="container">
+      <h3>Trains</h3>
+      <div class="row">
+        <table class="responsive-table col s12">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Destination</th>
+              <th>Freq. (min)</th>
+              <th>Next arrival</th>
+              <th>Minutes away</th>
+            <tr>
+          </thead>
+          <tbody id="trains">
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <hr>
+      <h3>Add train</h3>
+      <div class="row">
+        <form id="form" class="col s12">
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="train-name" type="text" name="name">
+              <label for="train-name">Train name</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="destination" type="text" name="dest">
+              <label for="destination">Destination</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="first-time" type="text" class="timepicker" name="firstTime">
+              <label for="first-time">First train time</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="frequency" type="number" name="freq">
+              <label for="frequency">Frequency (min)</label>
+            </div>
+          </div>
+          <button type="submit" class="waves-effect waves-light btn">button</button>          
+        </form>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
